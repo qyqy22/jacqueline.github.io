@@ -10,8 +10,9 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 1.create new Repository in Github     
 2.Install Tools      
 3.Deploy Website   
-4.Use Hexo    
-5.Markdown Article   
+4.Use Hexo  
+5.Auto browersersync       
+6.Markdown Article   
 
 ### Create new Repository in Github
 Once you've signed in,you'll create a new repository to get started.  
@@ -131,6 +132,19 @@ Directory structure
    --_posts    you can see new blogs .md files in this file
 ---themes   you can download themes and put it under this files
 ```     
+### Auto browersersync     
+```bash     
+npm install -g browser-sync    
+```     
+check install succeed     
+```bash         
+browser-sync --version   
+```       
+install plugin browsersync    
+```bash    
+npm install hexo-browsersync --save     
+```     
+After you edit file, you enter ctrl+s, browser will refreh the page.        
 
 ####  Themes  (ejs &  stylus)   
 [ejs](https://ejs.co/) is Embedded JavaScript templating.     
@@ -146,7 +160,7 @@ Themes  directory structure
 ```  
 
 ###  Markdown Article 
-[Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).   
+download tool [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to edit md file.  
 
 
 
