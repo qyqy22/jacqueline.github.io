@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-06-04T20:50:38.884Z</updated>
+  <updated>2019-06-10T22:56:59.549Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Elephant Shed</title>
-    <link href="http://yoursite.com/2019/05/30/elephant-shed/"/>
-    <id>http://yoursite.com/2019/05/30/elephant-shed/</id>
-    <published>2019-05-30T23:43:08.000Z</published>
-    <updated>2019-06-04T20:50:38.884Z</updated>
+    <link href="http://yoursite.com/2019/06/04/elephant/"/>
+    <id>http://yoursite.com/2019/06/04/elephant/</id>
+    <published>2019-06-04T21:10:14.514Z</published>
+    <updated>2019-06-10T22:56:59.549Z</updated>
     
     <summary type="html">
     
@@ -41,10 +41,42 @@
     
     </summary>
     
-      <category term="postgresql" scheme="http://yoursite.com/categories/postgresql/"/>
+      <category term="elephant shed" scheme="http://yoursite.com/categories/elephant-shed/"/>
     
     
-      <category term="postgresql" scheme="http://yoursite.com/tags/postgresql/"/>
+      <category term="elephant shed" scheme="http://yoursite.com/tags/elephant-shed/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Elephant Shed</title>
+    <link href="http://yoursite.com/2019/05/30/elephant-shed/"/>
+    <id>http://yoursite.com/2019/05/30/elephant-shed/</id>
+    <published>2019-05-30T23:43:08.000Z</published>
+    <updated>2019-06-10T22:58:12.396Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h1&gt;&lt;p&gt;Elephant Shed 是一个基于网页版的postgreSQL前端管理软件。他捆绑了PostgreSQL的各项应用软件和组件。当前他能管理单点Debian/Ubuntu PostgreSQL服务起和应用。&lt;/p&gt;
+&lt;p&gt;主要组件包括如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PostgreSQL - &lt;a href=&quot;https://www.postgresql.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.postgresql.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pgAdmin4 - &lt;a href=&quot;https://www.pgadmin.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.pgadmin.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;postgresql-common - &lt;a href=&quot;https://anonscm.debian.org/cgit/pkg-postgresql/postgresql-common.git&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://anonscm.debian.org/cgit/pkg-postgresql/postgresql-common.git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pgBadger - &lt;a href=&quot;http://dalibo.github.io/pgbadger/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://dalibo.github.io/pgbadger/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pgBackRest - &lt;a href=&quot;http://www.pgbackrest.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.pgbackrest.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Grafana - &lt;a href=&quot;https://grafana.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://grafana.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Prometheus - &lt;a href=&quot;https://prometheus.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://prometheus.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cockpit - &lt;a href=&quot;http://cockpit-project.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://cockpit-project.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Shell In A Box - &lt;a href=&quot;https://github.com/shellinabox/shellinabox&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://github.com/shellinabox/shellinabox&lt;/a&gt;      &lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="elephant" scheme="http://yoursite.com/categories/elephant/"/>
+    
+    
+      <category term="elephant" scheme="http://yoursite.com/tags/elephant/"/>
     
   </entry>
   
@@ -84,24 +116,6 @@
   </entry>
   
   <entry>
-    <title>how to layout my blogs</title>
-    <link href="http://yoursite.com/2019/05/14/how-to-layout-my-blogs/"/>
-    <id>http://yoursite.com/2019/05/14/how-to-layout-my-blogs/</id>
-    <published>2019-05-14T16:58:06.000Z</published>
-    <updated>2019-06-04T20:51:04.584Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="blogs" scheme="http://yoursite.com/categories/blogs/"/>
-    
-    
-      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo Github</title>
     <link href="http://yoursite.com/2019/05/14/hexo-github/"/>
     <id>http://yoursite.com/2019/05/14/hexo-github/</id>
@@ -119,6 +133,24 @@
     
     
       <category term="hexo github" scheme="http://yoursite.com/tags/hexo-github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>how to layout my blogs</title>
+    <link href="http://yoursite.com/2019/05/14/how-to-layout-my-blogs/"/>
+    <id>http://yoursite.com/2019/05/14/how-to-layout-my-blogs/</id>
+    <published>2019-05-14T16:58:06.000Z</published>
+    <updated>2019-06-04T20:51:04.584Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="blogs" scheme="http://yoursite.com/categories/blogs/"/>
+    
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
     
   </entry>
   
