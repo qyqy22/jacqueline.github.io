@@ -4,17 +4,31 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jacqueline</title>
-    <link>http://yoursite.com/</link>
-    <atom:link href="//categories/postgresql/rss2.xml" rel="self" type="application/rss+xml"/>
-    <atom:link href="/categories/postgresql/" rel="hub"/>
+    <link>https://qyqy22.github.io/</link>
+    <atom:link href="//rss2.xml" rel="self" type="application/rss+xml"/>
+    
     <description>computer I want to be best</description>
-    <pubDate>Thu, 20 Jun 2019 18:56:14 GMT</pubDate>
+    <pubDate>Fri, 21 Jun 2019 17:11:41 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>addPostgis</title>
+      <link>https://qyqy22.github.io/2019/06/21/addPostgis/</link>
+      <guid>https://qyqy22.github.io/2019/06/21/addPostgis/</guid>
+      <pubDate>Fri, 21 Jun 2019 17:05:45 GMT</pubDate>
+      <description>
+      
+        &lt;h3 id=&quot;create-a-complex-extension&quot;&gt;&lt;a href=&quot;#create-a-complex-extension&quot; class=&quot;headerlink&quot; title=&quot;create a complex extension&quot;&gt;&lt;/a&gt;create a complex extension&lt;/h3&gt;&lt;p&gt;For example : create a postgis&lt;br&gt;if you install postgis at first, there are some information as viewed below:&lt;br&gt;Geos-config not found&lt;br&gt;gdal-config not found&lt;br&gt;Sudo apt install libgdal-dev&lt;br&gt;You should install proj and geos first&lt;/p&gt;
+      
+      </description>
+      
+      <comments>https://qyqy22.github.io/2019/06/21/addPostgis/#disqus_thread</comments>
+    </item>
+    
+    <item>
       <title>How To Add Extensions To PG on Ubuntu</title>
-      <link>http://yoursite.com/2019/06/20/addExtension/</link>
-      <guid>http://yoursite.com/2019/06/20/addExtension/</guid>
+      <link>https://qyqy22.github.io/2019/06/20/addExtension/</link>
+      <guid>https://qyqy22.github.io/2019/06/20/addExtension/</guid>
       <pubDate>Thu, 20 Jun 2019 17:32:00 GMT</pubDate>
       <description>
       
@@ -24,13 +38,13 @@
       
       </description>
       
-      <comments>http://yoursite.com/2019/06/20/addExtension/#disqus_thread</comments>
+      <comments>https://qyqy22.github.io/2019/06/20/addExtension/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Elephant Shed</title>
-      <link>http://yoursite.com/2019/05/30/elephant-shed/</link>
-      <guid>http://yoursite.com/2019/05/30/elephant-shed/</guid>
+      <link>https://qyqy22.github.io/2019/05/30/elephant-shed/</link>
+      <guid>https://qyqy22.github.io/2019/05/30/elephant-shed/</guid>
       <pubDate>Thu, 30 May 2019 23:43:08 GMT</pubDate>
       <description>
       
@@ -38,13 +52,13 @@
       
       </description>
       
-      <comments>http://yoursite.com/2019/05/30/elephant-shed/#disqus_thread</comments>
+      <comments>https://qyqy22.github.io/2019/05/30/elephant-shed/#disqus_thread</comments>
     </item>
     
     <item>
       <title>installing pgAdmin4 and pg on Ubuntu</title>
-      <link>http://yoursite.com/2019/05/16/installing-pgAdmin4-and-pg/</link>
-      <guid>http://yoursite.com/2019/05/16/installing-pgAdmin4-and-pg/</guid>
+      <link>https://qyqy22.github.io/2019/05/16/installing-pgAdmin4-and-pg/</link>
+      <guid>https://qyqy22.github.io/2019/05/16/installing-pgAdmin4-and-pg/</guid>
       <pubDate>Thu, 16 May 2019 21:30:05 GMT</pubDate>
       <description>
       
@@ -57,13 +71,13 @@
       
       </description>
       
-      <comments>http://yoursite.com/2019/05/16/installing-pgAdmin4-and-pg/#disqus_thread</comments>
+      <comments>https://qyqy22.github.io/2019/05/16/installing-pgAdmin4-and-pg/#disqus_thread</comments>
     </item>
     
     <item>
       <title>Hexo Github</title>
-      <link>http://yoursite.com/2019/05/14/hexo-github/</link>
-      <guid>http://yoursite.com/2019/05/14/hexo-github/</guid>
+      <link>https://qyqy22.github.io/2019/05/14/hexo-github/</link>
+      <guid>https://qyqy22.github.io/2019/05/14/hexo-github/</guid>
       <pubDate>Tue, 14 May 2019 16:58:06 GMT</pubDate>
       <description>
       
@@ -72,7 +86,7 @@
       
       </description>
       
-      <comments>http://yoursite.com/2019/05/14/hexo-github/#disqus_thread</comments>
+      <comments>https://qyqy22.github.io/2019/05/14/hexo-github/#disqus_thread</comments>
     </item>
     
   </channel>

@@ -2,30 +2,31 @@
 <html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Archives: 2019/5 - Jacqueline</title>
+<title>addPostgis - Jacqueline</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="computer I want to be best">
+    <meta name="description" content="create a complex extensionFor example : create a postgisif you install postgis at first, there are some information as viewed below:Geos-config not foundgdal-config not foundSudo apt install libgdal-d">
 <meta name="keywords" content="Technology ComputerScience">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jacqueline">
-<meta property="og:url" content="https://qyqy22.github.io/archives/2019/05/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="addPostgis">
+<meta property="og:url" content="https://qyqy22.github.io/2019/06/21/addPostgis/index.html">
 <meta property="og:site_name" content="Jacqueline">
-<meta property="og:description" content="computer I want to be best">
+<meta property="og:description" content="create a complex extensionFor example : create a postgisif you install postgis at first, there are some information as viewed below:Geos-config not foundgdal-config not foundSudo apt install libgdal-d">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://qyqy22.github.io/images/og_image.png">
+<meta property="og:image" content="https://qyqy22.github.io/gallery/cat.jpg">
+<meta property="og:updated_time" content="2019-06-21T17:11:41.490Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jacqueline">
-<meta name="twitter:description" content="computer I want to be best">
-<meta name="twitter:image" content="https://qyqy22.github.io/images/og_image.png">
+<meta name="twitter:title" content="addPostgis">
+<meta name="twitter:description" content="create a complex extensionFor example : create a postgisif you install postgis at first, there are some information as viewed below:Geos-config not foundgdal-config not foundSudo apt install libgdal-d">
+<meta name="twitter:image" content="https://qyqy22.github.io/gallery/cat.jpg">
 
 
 
 
 
-<link rel="alternative" href="rss2.xml" title="Jacqueline" type="application/atom+xml">
+<link rel="alternative" href="rss2.xml" title="addPostgis" type="application/atom+xml">
 
 
 
@@ -95,7 +96,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/gallery/logocat.png" alt="Jacqueline" height="28">
+                <img src="/gallery/logocat.png" alt="addPostgis" height="28">
             
             </a>
         </div>
@@ -127,6 +128,10 @@
                     
                 
                 
+                <a class="navbar-item is-hidden-tablet catalogue" title="Table of Contents" href="javascript:;">
+                    <i class="fas fa-list-ul"></i>
+                </a>
+                
                 
                 <a class="navbar-item search" title="Search" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -140,98 +145,123 @@
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/gallery/cat.jpg" alt="addPostgis">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-06-21T17:05:45.000Z">2019-06-21</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 206 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                addPostgis
+                <!--add by jac page.author-->
+                <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+                    <span class="level-item has-text-grey">
+                        Jacqueline.zhang
+                    </span>
+                </div>
+                <!--add by jac end-->
+            
+        </h1>
+        <div class="content">
+            <h3 id="create-a-complex-extension"><a href="#create-a-complex-extension" class="headerlink" title="create a complex extension"></a>create a complex extension</h3><p>For example : create a postgis<br>if you install postgis at first, there are some information as viewed below:<br>Geos-config not found<br>gdal-config not found<br>Sudo apt install libgdal-dev<br>You should install proj and geos first</p>
+<a id="more"></a>
+<h4 id="install-proj"><a href="#install-proj" class="headerlink" title="install proj"></a>install proj</h4><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">tar -xvzf proj-4.8.0.tar.gz</span><br><span class="line"><span class="hljs-built_in">cd</span> proj-4.8.0</span><br><span class="line">./configure --prefix=/usr/<span class="hljs-built_in">local</span>/proj</span><br><span class="line">make</span><br><span class="line">make install    </span><br><span class="line">```         </span><br><span class="line">Some information ask you to install segments.</span><br><span class="line"><span class="hljs-string">'install-recursive'</span> failed</span><br><span class="line">you have to install recursive</span><br><span class="line"><span class="hljs-comment">#### install geos </span></span><br><span class="line">```bash       </span><br><span class="line">tar -jxvf geos-3.3.3.tar.bz2</span><br><span class="line"><span class="hljs-built_in">cd</span> geos-3.3.3</span><br><span class="line">./configure --prefix=/usr/<span class="hljs-built_in">local</span>/geos</span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line">```       </span><br><span class="line"></span><br><span class="line">install swig</span><br><span class="line">Install python-dev  </span><br><span class="line"></span><br><span class="line">```bash   </span><br><span class="line">$ ./configure --prefix=/home/postgres/Downloads/geos-3.7.2/build --<span class="hljs-built_in">enable</span>-python </span><br><span class="line">$ /Downloads/geos-3.7.2/build/bin</span><br><span class="line">$ geos-config --version</span><br><span class="line">&gt; 3.7.2</span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line"><span class="hljs-built_in">set</span> Enviorment    </span><br><span class="line"></span><br><span class="line">```bash   </span><br><span class="line"><span class="hljs-built_in">export</span> LD_LIBRARY_PATH=<span class="hljs-string">"/opt/geos-3.3.3/build/lib:<span class="hljs-variable">$LD_LIBRARY_PATH</span>"</span></span><br><span class="line"><span class="hljs-built_in">export</span> PATH=<span class="hljs-string">"/opt/geos-3.3.3/build/bin:<span class="hljs-variable">$PATH</span>"</span></span><br></pre></td></tr></table></figure>
+<h4 id="install-postgis"><a href="#install-postgis" class="headerlink" title="install postgis"></a>install postgis</h4><pre><code class="bash">tar -xvzf postgis-1.5.4.tar.gz
+<span class="built_in">cd</span> postgis-1.5.4
+./configure --with-pgconfig=/usr/<span class="built_in">local</span>/pgsql/bin/pg_config --with-projdir=/usr/<span class="built_in">local</span>/proj --with-geosconfig=/usr/<span class="built_in">local</span>/geos/bin/geos-config
+</code></pre>
+<p>pg_ctl -D /data/pgsql/ -l /data/pgsql/pgsql.log start<br>createdb template_postgis<br>psql -f /usr/local/pgsql/share/contrib/postgis-1.5/postgis.sql -d template_postgis<br>psql template_postgis<br>select postgis_full_version();       </p>
+<p><img src="/2019/06/21/addPostgis/selectpostgis.png" alt="selectpostgis"></p>
 
-<div class="card widget">
+        </div>
+        
+        
+        
+        <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_google_plus"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+        
+    </div>
+</div>
+
+
+
+<div class="card">
     <div class="card-content">
-        <h3 class="tag is-link">
-        May 2019
-        </h3>
-        <div class="timeline">
-        
-            <article class="media">
-                
-                <a href="/2019/05/30/elephant-shed/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/Elephant_Shed.png" alt="Elephant Shed">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-05-30T23:43:08.000Z">2019-05-30</time>
-                        <a href="/2019/05/30/elephant-shed/" class="has-link-black-ter is-size-6">Elephant Shed</a>
-                        
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/elephant/">elephant</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/2019/05/16/installing-pgAdmin4-and-pg/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/pgAdmin4-1.png" alt="installing pgAdmin4 and pg on Ubuntu">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-05-16T21:30:05.000Z">2019-05-16</time>
-                        <a href="/2019/05/16/installing-pgAdmin4-and-pg/" class="has-link-black-ter is-size-6">installing pgAdmin4 and pg on Ubuntu</a>
-                        
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/postgresql/">postgresql</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
-            <article class="media">
-                
-                <a href="/2019/05/14/hexo-github/" class="media-left">
-                    <p class="image is-64x64">
-                        <img class="thumbnail" src="/gallery/news1.jpg" alt="Hexo Github">
-                    </p>
-                </a>
-                
-                <div class="media-content">
-                    <div class="content">
-                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2019-05-14T16:58:06.000Z">2019-05-14</time>
-                        <a href="/2019/05/14/hexo-github/" class="has-link-black-ter is-size-6">Hexo Github</a>
-                        
-                        <div class="level article-meta is-mobile">
-                            <div class="level-left">
-                                
-                                <div class="level-item is-size-7 is-uppercase">
-                                <a class="has-link-grey -link" href="/categories/hexo/">hexo</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        
+        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <div class="buttons is-centered">
+            
         </div>
     </div>
 </div>
 
 
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/06/20/addExtension/">
+                <span class="level-item">How To Add Extensions To PG on Ubuntu</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">Comments</h3>
+        
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://qyqy22.github.io/2019/06/21/addPostgis/';
+        this.page.identifier = '2019/06/21/addPostgis/';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');  
+        s.src = '//' + 'https-highgosoftware-github-io' + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<div id="disqus_thread">
+    
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+    </div>
+</div>
 </div>
                 
 
@@ -326,6 +356,29 @@
 </div>
     
         
+<div class="card widget" id="toc">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Table of Contents
+            </h3>
+            <ul class="menu-list"><li>
+        <a class="is-flex" href="#create-a-complex-extension">
+        <span class="has-mr-6">1</span>
+        <span>create a complex extension</span>
+        </a><ul class="menu-list"><li>
+        <a class="is-flex" href="#install-proj">
+        <span class="has-mr-6">1.1</span>
+        <span>install proj</span>
+        </a></li><li>
+        <a class="is-flex" href="#install-postgis">
+        <span class="has-mr-6">1.2</span>
+        <span>install postgis</span>
+        </a></li></ul></li></ul>
+        </div>
+    </div>
+</div>
+
     
         
 
@@ -813,11 +866,11 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/gallery/logocat.png" alt="Jacqueline" height="28">
+                    <img src="/gallery/logocat.png" alt="addPostgis" height="28">
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 Jacqueline zhang&nbsp;
+                &copy; 2019 Jacqueline.zhang&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
                 
                 </p>
