@@ -16,7 +16,7 @@
 <meta property="og:description" content="How Extensibility WorksPostgreSQL is extensible because its operation is catalog-driven. PostgreSQL stores much more information in its catalogs: not only information about tables and columns, but als">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://qyqy22.github.io/gallery/news1.jpg">
-<meta property="og:updated_time" content="2019-06-25T18:01:57.112Z">
+<meta property="og:updated_time" content="2019-07-17T23:12:20.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How To Add Extensions To PG on Ubuntu">
 <meta name="twitter:description" content="How Extensibility WorksPostgreSQL is extensible because its operation is catalog-driven. PostgreSQL stores much more information in its catalogs: not only information about tables and columns, but als">
@@ -167,7 +167,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    7 minutes read (About 1012 words)
+                    8 minutes read (About 1267 words)
                 </span>
                 
                 
@@ -190,15 +190,20 @@
             <h2 id="How-Extensibility-Works"><a href="#How-Extensibility-Works" class="headerlink" title="How Extensibility Works"></a>How Extensibility Works</h2><p>PostgreSQL is extensible because its operation is catalog-driven.</p>
 <p>PostgreSQL stores much more information in its catalogs: not only information about tables and columns, but also information about data types, functions, access methods, and so on. These tables can be modified by the user, and since PostgreSQL bases its operation on these tables, this means that PostgreSQL can be extended by users.</p>
 <p>The PostgreSQL server can moreover incorporate user-written code into itself through dynamic loading.<br><a id="more"></a></p>
-<h3 id="The-3-directory-for-Extension-directory"><a href="#The-3-directory-for-Extension-directory" class="headerlink" title="The 3 directory for Extension directory"></a>The 3 directory for Extension directory</h3><p>origin extension directory  ../postgresql/contrib/<br>after build extension directory ../postgresql/build_dir/contrib<br>extension installed directory   ../postgresql/psql/share/extension</p>
-<h3 id="There-are-two-kinds-of-add-extension"><a href="#There-are-two-kinds-of-add-extension" class="headerlink" title="There are two kinds of add extension."></a>There are two kinds of add extension.</h3><ol>
-<li>add Postgresql community supported extension</li>
-<li>add your own extension to PG</li>
-</ol>
-<p><strong>This blog emphasis on ‘add your own extension to PG’</strong></p>
-<h2 id="How-to-Use-PostgreSQL-Community-Supported-Extensions"><a href="#How-to-Use-PostgreSQL-Community-Supported-Extensions" class="headerlink" title="How to Use PostgreSQL Community Supported Extensions"></a>How to Use PostgreSQL Community Supported Extensions</h2><figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">postgres=<span class="hljs-comment"># create extension pg_buffercache; </span></span><br><span class="line">postgres=<span class="hljs-comment"># \dx</span></span><br><span class="line">List of installed extensions</span><br><span class="line">Name | Version | Schema | Description</span><br><span class="line"><span class="hljs-comment">--------------------+---------+------------+-------------------------------------------------</span></span><br><span class="line">pg_buffercache | 1.3 | public | examine the shared buffer <span class="hljs-keyword">cache</span></span><br><span class="line">pg_stat_statements | <span class="hljs-number">1.7</span> | <span class="hljs-keyword">public</span> | track execution <span class="hljs-keyword">statistics</span> <span class="hljs-keyword">of</span> <span class="hljs-keyword">all</span> <span class="hljs-keyword">SQL</span> statements executed</span><br><span class="line">plpgsql | <span class="hljs-number">1.0</span> | pg_catalog | PL/pgSQL <span class="hljs-keyword">procedural</span> <span class="hljs-keyword">language</span></span><br></pre></td></tr></table></figure>
+<h3 id="The-3-directory-for-Extension-directory"><a href="#The-3-directory-for-Extension-directory" class="headerlink" title="The 3 directory for Extension directory"></a>The 3 directory for Extension directory</h3><p>The following three directories are used for storing the files related to creating a extension in PG, these are :</p>
+<p>1- /path/to/source/tree/contrib/ - This is top level directory for extension in the PostgreSQL source code.</p>
+<p>2- /path/to/source/tree/build_dir/contrib - If you build original code in build_dir directory, the contrib code will be built in the same build_dir path.<br>If you build original code in the source tree, the contrib code will be built in the source tree dir not in the build_dir directory. The build_dir depends whether you mkdir it.</p>
+<p>3- /path/to/source/tree/psql/share/extension - I install all files under the directory <code>/path/to/source/tree/psql</code> instead of <code>/usr/local/pgsql</code>. So the extension is intall under the path. This is the shared library for the extension is stored.When I install my own extensions, the extension will be stored under /share/extension path.</p>
+<h3 id="There-are-two-kinds-of-ways-to-add-extension"><a href="#There-are-two-kinds-of-ways-to-add-extension" class="headerlink" title="There are two kinds of ways to add extension."></a>There are two kinds of ways to add extension.</h3><p>The PostgreSQL server comes pre-installed with a number of extensions, in order to load these extensions in the database the user needs to run the “create extension” command and provide a name of the extension. The corresponding extension files (mentioned below) are excuted in order to load the extension in the database.</p>
+<p>PostgreSQL also allows the user to create there own extensions and load them in the database. This blog focusses on <code>how you can create your own extensions</code> to PostgreSQL and load them in the database.</p>
+<h2 id="How-to-Use-PostgreSQL-Community-Supported-Extensions"><a href="#How-to-Use-PostgreSQL-Community-Supported-Extensions" class="headerlink" title="How to Use PostgreSQL Community Supported Extensions"></a>How to Use PostgreSQL Community Supported Extensions</h2><p>run the “create extension” command and provide a name of the extension.</p>
+<blockquote>
+<p>CREATE EXTENSION [ IF NOT EXISTS ] extension_name<br>   [ WITH ] [ SCHEMA schema_name ]<br>            [ VERSION version ]<br>            [ FROM old_version ]<br>            [ CASCADE ]</p>
+</blockquote>
+<p>for example I create extension pg_buffercache.</p>
+<figure class="highlight sql hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">postgres=<span class="hljs-comment"># create extension pg_buffercache; </span></span><br><span class="line">postgres=<span class="hljs-comment"># \dx</span></span><br><span class="line">List of installed extensions</span><br><span class="line">Name | Version | Schema | Description</span><br><span class="line"><span class="hljs-comment">--------------------+---------+------------+-------------------------------------------------</span></span><br><span class="line">pg_buffercache | 1.3 | public | examine the shared buffer <span class="hljs-keyword">cache</span></span><br><span class="line">pg_stat_statements | <span class="hljs-number">1.7</span> | <span class="hljs-keyword">public</span> | track execution <span class="hljs-keyword">statistics</span> <span class="hljs-keyword">of</span> <span class="hljs-keyword">all</span> <span class="hljs-keyword">SQL</span> statements executed</span><br><span class="line">plpgsql | <span class="hljs-number">1.0</span> | pg_catalog | PL/pgSQL <span class="hljs-keyword">procedural</span> <span class="hljs-keyword">language</span></span><br></pre></td></tr></table></figure>
 <h2 id="Add-a-your-own-extension-on-PG"><a href="#Add-a-your-own-extension-on-PG" class="headerlink" title="Add a your own extension on PG"></a>Add a your own extension on PG</h2><p>To be able to run the create extension command in your database,your extension needs at least two files: a control file and a extension’s SQL script file in the format.<br>The simple plpgsql function allows us to encode any integer into its base36 representation. If we copied these two files into postgres SHAREDIR/extension directory, then we could start using the extension with CREATE EXTENSION. But we won’t bother users with figuring out where to put these files and how to copy them manually – that’s what Makefiles are made for. So, let’s add one to our project.  </p>
-<h3 id="Create-base36-extension-to-pg"><a href="#Create-base36-extension-to-pg" class="headerlink" title="Create base36 extension to pg"></a>Create base36 extension to pg</h3><p>create a base36 folder<br>I add base36 folder under the directory (../postgresql/build_dir/contrib/)</p>
+<h3 id="Create-base36-extension-to-pg"><a href="#Create-base36-extension-to-pg" class="headerlink" title="Create base36 extension to pg"></a>Create base36 extension to pg</h3><p>create a base36 folder<br>I add base36 folder under the directory (/path/to/source/tree/build_dir/contrib/)</p>
 <blockquote>
 <p>$ mkdir base36  –you can put anywhere you like.   </p>
 </blockquote>
@@ -221,7 +226,7 @@
 <blockquote>
 <p>$ make install</p>
 </blockquote>
-<p>.sql and .control will be add to dir $PGDATA/share/extension/  </p>
+<p>.sql and .control will be installed to dir $PGDATA/share/extension/<br>You can see the extension was installed in the share/extension path.</p>
 <p><img src="/2019/06/20/addExtension/makeinstalladdexten.png" alt="makeinstalladdexten"></p>
 <h4 id="Regress-test"><a href="#Regress-test" class="headerlink" title="Regress test"></a>Regress test</h4><p>I also add a regress test in Makefile and add regress test SQL as viewed below.</p>
 <p><img src="/2019/06/20/addExtension/regresstest.png" alt="regresstest"></p>
@@ -459,9 +464,9 @@
         <span class="has-mr-6">1.1</span>
         <span>The 3 directory for Extension directory</span>
         </a></li><li>
-        <a class="is-flex" href="#There-are-two-kinds-of-add-extension">
+        <a class="is-flex" href="#There-are-two-kinds-of-ways-to-add-extension">
         <span class="has-mr-6">1.2</span>
-        <span>There are two kinds of add extension.</span>
+        <span>There are two kinds of ways to add extension.</span>
         </a></li></ul></li><li>
         <a class="is-flex" href="#How-to-Use-PostgreSQL-Community-Supported-Extensions">
         <span class="has-mr-6">2</span>
